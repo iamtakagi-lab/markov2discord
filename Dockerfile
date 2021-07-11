@@ -71,6 +71,8 @@ RUN python testMecab.py \
 COPY . /app/
 
 # Add script to crontab
+RUN echo '0 0 * * * cd /app; python fetchTweets.py && python generateModel.py' > /var/spool/cron/crontabs/root
+
 RUN echo '*/1 * * * * cd /app; python discord.py' > /var/spool/cron/crontabs/root
 
 # Run crond
