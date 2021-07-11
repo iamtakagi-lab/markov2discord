@@ -73,7 +73,7 @@ RUN python src/testMecab.py \
 # Add script to crontab
 RUN echo '0 0 * * * cd /app; python fetchTweets.py && python src/generateModel.py' > /var/spool/cron/crontabs/root
 
-RUN echo '*/1 * * * * cd /app; python src/discord.py' > /var/spool/cron/crontabs/root
+RUN echo '*/5 * * * * cd /app; python src/discord.py' > /var/spool/cron/crontabs/root
 
 # Run crond
 ENTRYPOINT ["crond", "-f"]
