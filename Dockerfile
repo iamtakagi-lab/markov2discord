@@ -64,16 +64,16 @@ ENV TWITTER_AT=${TWITTER_AT}
 ENV TWITTER_ATS=${TWITTER_ATS}
 ENV DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
 
-RUN python testMecab.py \
-    && python fetchTweets.py \
-    && python generateModel.py
-
 COPY . /app/
 
-# Add script to crontab
-RUN echo '0 0 * * * cd /app; python fetchTweets.py && python generateModel.py' > /var/spool/cron/crontabs/root
+RUN python src/testMecab.py \
+    && python src/fetchTweets.py \
+    && python src/generateModel.py
 
-RUN echo '*/1 * * * * cd /app; python discord.py' > /var/spool/cron/crontabs/root
+# Add script to crontab
+RUN echo '0 0 * * * cd /app; python fetchTweets.py && python src/generateModel.py' > /var/spool/cron/crontabs/root
+
+RUN echo '*/1 * * * * cd /app; python src/discord.py' > /var/spool/cron/crontabs/root
 
 # Run crond
 ENTRYPOINT ["crond", "-f"]
