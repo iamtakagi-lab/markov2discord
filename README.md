@@ -1,4 +1,5 @@
 # diskovify
 🧠 ツイートをマルコフ連鎖してDiscord Webhookに投げる
 
-![image](https://user-images.githubusercontent.com/46530214/125179768-8142a900-e22c-11eb-8e38-59b75dad8c36.png)
+![スクリーンショット 2021-07-11 22 31 24](https://user-images.githubusercontent.com/46530214/125197531-18dde100-e299-11eb-8219-ca60530783b0.png)
+
