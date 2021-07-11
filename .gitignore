@@ -1,0 +1,4 @@
+tweets.txt
+dist
+__pycache__
+docker-compose.yml
