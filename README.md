@@ -8,3 +8,6 @@
 nano docker-compose.example.yml
 docker-compose up -d --build
 ```
+
+## LICENSE
+iamtakagi/diskovify is provided under the MIT license.
