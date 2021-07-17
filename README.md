@@ -1,2 +1,2 @@
-# diskovify
-🧠 ツイートをマルコフ連鎖してDiscordに流します
+# markov-feed
+🧠 ツイートをマルコフ連鎖してDiscordに送信します
