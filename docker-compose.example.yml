@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    container_name: diskovify
+    container_name: markov-feed
     build:
       context: .
       args:
