@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
   markov-feed:
-    image: iamtakagi/markov-feed
     restart: unless-stopped
     build:
+      context: .
       args:
         TZ: Asia/Tokyo
         USERS: iam_takagi
