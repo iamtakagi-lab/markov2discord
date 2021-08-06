@@ -17,6 +17,7 @@ on:
 
 env:
   DOCKER_BASE_NAME: iamtakagi/markov-feed
+  USERS: meis_takagi
 
 jobs:
   build:
