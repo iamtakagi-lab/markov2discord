@@ -1,10 +1,10 @@
 version: '3.8'
 
 services:
-  app:
-    container_name: markov-feed
+  markov-feed:
+    image: iamtakagi/markov-feed
+    restart: unless-stopped
     build:
-      context: .
       args:
         TZ: Asia/Tokyo
         USERS: iam_takagi
@@ -13,4 +13,3 @@ services:
         TWITTER_AT: xxx
         TWITTER_ATS: xxx
         DISCORD_WEBHOOK_URL: https://discord.com/api/webhooks/xxx/xxx
-    restart: always
