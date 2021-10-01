@@ -1,4 +1,4 @@
-# markov-feed
+# markov2discord
 
 ## LICENCE
-iamtakagi/markov-feed is provided under the MIT license.
+iamtakagi/markov2discord is provided under the MIT license.
