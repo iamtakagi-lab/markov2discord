@@ -1,2 +1,4 @@
 # markov-feed
-🧠 ツイートをマルコフ連鎖してDiscordに送信します
+
+## LICENCE
+iamtakagi/markov-feed is provided under the MIT license.
