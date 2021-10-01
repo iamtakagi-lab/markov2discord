@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  markov-feed:
+  markov2discord:
     restart: unless-stopped
     build:
       context: .
